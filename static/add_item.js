@@ -1,10 +1,10 @@
 const API_BASE = "/api";
 
 function addItem() {
-    const orderId = document.getElementById("order-id").value;
-    const userName = document.getElementById("item-user").value;
-    const itemName = document.getElementById("item-name").value;
-    const notes = document.getElementById("item-notes").value;
+    const orderId = document.getElementById("order-id").value.trim();
+    const userName = document.getElementById("item-user").value.trim();
+    const itemName = document.getElementById("item-name").value.trim();
+    const notes = document.getElementById("item-notes").value.trim();
 
     if (!orderId || !userName || !itemName) {
         alert("Please fill out all required fields.");
