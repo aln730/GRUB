@@ -1,6 +1,8 @@
 module grub
 
-go 1.24
+go 1.24.0
+
+toolchain go1.24.11
 
 require (
 	github.com/gin-gonic/gin v1.11.0
